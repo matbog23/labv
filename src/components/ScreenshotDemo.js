@@ -54,12 +54,14 @@ export default function ScreenshotDemo() {
         </button>
       </div>
       <div className={styles['slider']}>
-        <button onClick={handlePrev}>&lt;</button>
         <img
           src={currentSlides[currentFrame].src}
           alt={currentSlides[currentFrame].alt}
         />
-        <button onClick={handleNext}>&gt;</button>
+        <div className={styles['slider-buttons']}>
+          <button onClick={handlePrev}>&lt;</button>
+          <button onClick={handleNext}>&gt;</button>
+        </div>
       </div>
       <div className={styles['frame-indicators']}>
         {currentSlides.map((_, index) => (

@@ -2,6 +2,10 @@
     text-align: center;
     color: var(--primary-color);
     margin-top: calc(var(--spacing-unit) * 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .mode-switch {
@@ -33,13 +37,27 @@
   
   .slider {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: calc(var(--spacing-unit) * 2);
+    gap: calc(var(--spacing-unit) * 4);
     margin-bottom: calc(var(--spacing-unit) * 4);
   }
   
-  .slider button {
+  .slider img {
+    max-width: 400px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 100%; /* Ensure the image resizes gracefully */
+  }
+  
+  .slider-buttons {
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--spacing-unit) * 4);
+  }
+  
+  .slider-buttons button {
     padding: calc(var(--spacing-unit) * 2);
     background-color: #1c1c1c;
     color: var(--primary-color);
@@ -50,14 +68,8 @@
     transition: background-color 0.3s ease;
   }
   
-  .slider button:hover {
+  .slider-buttons button:hover {
     background-color: var(--accent-color);
-  }
-  
-  .slider img {
-    max-width: 400px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
   }
   
   .frame-indicators {
@@ -77,5 +89,41 @@
   
   .frame-indicators span.active {
     background-color: var(--accent-color);
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .slider {
+      gap: calc(var(--spacing-unit) * 2); /* Reduce space for mobile */
+    }
+  
+    .slider-buttons {
+      flex-direction: row; /* Ensure buttons are side-by-side below the image */
+      gap: calc(var(--spacing-unit) * 2);
+    }
+  
+    .slider img {
+      max-width: 300px; /* Limit image size on smaller screens */
+    }
+  
+    .frame-indicators {
+      gap: calc(var(--spacing-unit) * 1.5);
+    }
+  
+    .frame-indicators span {
+      width: calc(var(--spacing-unit) * 1.5);
+      height: calc(var(--spacing-unit) * 1.5); /* Smaller indicators */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slider img {
+      max-width: 250px; /* Limit image size further for very small screens */
+    }
+  
+    .slider-buttons button {
+      font-size: 1.2rem; /* Adjust button size for mobile */
+      padding: calc(var(--spacing-unit) * 1.5);
+    }
   }
   
