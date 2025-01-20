@@ -123,6 +123,7 @@ export default function AutoCarousel() {
 
   return (
     <div className={styles.container}>
+        <h1>The RYDR app flow</h1>
       <div className={styles['mode-switch-container']}>
         <div className={styles['mode-switch']}>
           <button

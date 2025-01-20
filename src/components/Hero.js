@@ -12,9 +12,9 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles['hero-content']}>
         <div className={styles['hero-text']}>
-          <h1>Welcome to Our App</h1>
+          <h1>Welcome to RYDR</h1>
           <p>Discover how we make your journey easier, faster, and more convenient.</p>
-          <button onClick={scrollToDemo}>See the App in Action</button>
+          <button onClick={scrollToDemo}>See RYDR</button>
         </div>
       </div>
     </section>

@@ -191,3 +191,12 @@
     z-index: 3;
   }
   
+  section {
+    padding: calc(var(--spacing-unit) * 20) 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: calc(var(--spacing-unit) * 4);
+    align-self: start;
+  }

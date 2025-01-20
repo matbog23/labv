@@ -6,13 +6,16 @@ export default function Features() {
     ];
   
     return (
-      <section className="features container" id="features">
+      <section className="container" id="features">
+        <h1>Key Features</h1>
+        <div className="features container">
         {features.map((feature) => (
           <div className="feature-card" key={feature.id}>
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
           </div>
         ))}
+        </div>
       </section>
     );
   }

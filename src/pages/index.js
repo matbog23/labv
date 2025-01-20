@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import Features from '../components/Features';
 import AutoCarousel from '../components/AutoCarousel';
 import ScreenshotDemo from '../components/ScreenshotDemo';
+import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -34,7 +35,8 @@ export default function Home() {
         <section id="demo">
           {isLargeViewport ? <AutoCarousel /> : <ScreenshotDemo />}
         </section>
-        <section id="about">
+        <section id="faq">
+          <FAQ />
         </section>
       </main>
       <Footer />
