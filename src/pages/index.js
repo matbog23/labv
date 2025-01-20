@@ -31,7 +31,7 @@ export default function Home() {
         <section id="features">
           <Features />
         </section>
-        <section id="demo1">
+        <section id="demo">
           {isLargeViewport ? <AutoCarousel /> : <ScreenshotDemo />}
         </section>
         <section id="about">
