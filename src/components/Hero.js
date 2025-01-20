@@ -16,9 +16,6 @@ export default function Hero() {
           <p>Discover how we make your journey easier, faster, and more convenient.</p>
           <button onClick={scrollToDemo}>See the App in Action</button>
         </div>
-        <div className={styles['hero-image']}>
-          <img src="/Login.jpg" alt="Hero Image" />
-        </div>
       </div>
     </section>
   );
