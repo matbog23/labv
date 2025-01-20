@@ -1,0 +1,141 @@
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Mode Switch Container */
+  .mode-switch-container {
+    width: 100%;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mode-switch {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .mode-switch button {
+    padding: 16px 24px;
+    background-color: #1c1c1c;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mode-switch button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+  }
+  
+  .mode-switch button.active {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+  }
+  
+  /* Carousel Wrapper */
+  .auto-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    gap: 32px;
+    width: 100%;
+    padding: 32px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Carousel Content */
+  .carousel-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+  }
+  
+  .carousel-image-wrapper {
+    width: 300px;
+    aspect-ratio: 9 / 19.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-text {
+    flex: 1;
+    color: var(--primary-color);
+    text-align: left;
+  }
+  
+  .carousel-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+  
+  .carousel-text p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  /* Pagination Controls */
+  .pagination {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+  
+  .prev-button,
+  .next-button {
+    padding: 12px 24px;
+    background-color: #1c1c1c;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+  }
+  
+  .progress-bar {
+    flex: 1;
+    height: 6px;
+    background-color: #333;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: var(--accent-color);
+    transition: width 0.1s linear;
+  }
+  

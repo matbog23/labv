@@ -129,29 +129,6 @@
     box-shadow: var(--box-shadow);
   }
   
-  /* About / Bio Section */
-  .bio {
-    display: flex;
-    gap: calc(var(--spacing-unit) * 6);
-    align-items: center;
-    background: #1c1c1c;
-    padding: calc(var(--spacing-unit) * 6);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-  }
-  
-  .bio img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .bio p {
-    color: var(--secondary-color);
-    font-size: 1rem;
-  }
-  
   /* Contact Section */
   .contact-container {
     max-width: 800px;
@@ -211,5 +188,6 @@
     margin-top: auto;
     position: sticky;
     bottom: 0;
+    z-index: 3;
   }
   
